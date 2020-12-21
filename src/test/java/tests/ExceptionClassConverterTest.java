@@ -11,7 +11,8 @@ import parameterconverters.ExceptionClassConverter;
 public class ExceptionClassConverterTest {
 
   /**
-   * Tests parameterconverters.ExceptionClassConverter::convertExceptionNameToClass() with invalid inputs.
+   * Tests parameterconverters.ExceptionClassConverter::convertExceptionNameToClass() with
+   * invalid inputs.
    */
   @Test
   public void testConvertExceptionNameToClassWithInvalidInputs() {
@@ -30,7 +31,8 @@ public class ExceptionClassConverterTest {
   }
 
   /**
-   * Tests parameterconverters.ExceptionClassConverter::convertExceptionNameToClass() with valid inputs.
+   * Tests parameterconverters.ExceptionClassConverter::convertExceptionNameToClass() with
+   * valid inputs.
    */
   @Test
   public void testConvertExceptionNameToClassWithValidInputs() {
