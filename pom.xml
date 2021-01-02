@@ -6,7 +6,7 @@
 
     <groupId>org.java</groupId>
     <artifactId>popper</artifactId>
-    <version>2021.01.02</version>
+    <version>2021.01.03</version>
 
     <properties>
         <maven.compiler.target>14</maven.compiler.target>
