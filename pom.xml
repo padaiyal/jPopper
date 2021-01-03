@@ -147,6 +147,14 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>jPopper MVN package deployment</name>
+            <url>https://maven.pkg.github.com/padaiyal/jPopper</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>javax.validation</groupId>
