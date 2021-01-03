@@ -1,9 +1,11 @@
 package wordspackage;
 
+import java.io.IOException;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.validation.constraints.NotNull;
+import utilities.PropertyUtility;
 
 /**
  * Provides functionality to count words in a string.
@@ -20,14 +22,18 @@ public final class WordCounter {
    *
    * @param str String to compute word count.
    * @return The number of words in the input string
+   * @throws IOException When there is an issue loading the properties file.
    */
-  public static long getWordCount(@NotNull final String str) {
+  public static long getWordCount(@NotNull final String str) throws IOException {
     Objects.requireNonNull(str);
+
+    PropertyUtility.addPropertyFile(WordCounter.class, "WordCounter.properties");
 
     long wordCount = 0;
     if (str.length() != 0) {
       wordCount = 1;
-      Matcher matcher = Pattern.compile("\\s+").matcher(str.trim());
+      String wordSeparatorRegex = PropertyUtility.getProperty("string.regex.wordSeparator");
+      Matcher matcher = Pattern.compile(wordSeparatorRegex).matcher(str.trim());
       while (matcher.find()) {
         wordCount++;
       }
