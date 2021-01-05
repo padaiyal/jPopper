@@ -101,15 +101,14 @@ public class PropertyUtility {
   public static synchronized void addPropertyFile(Class<?> cls, String propertyFileName)
       throws IOException {
     Properties properties;
-    try (final InputStream inputStream = cls.getResourceAsStream(propertyFileName)) {
+    try (InputStream inputStream = cls.getResourceAsStream(propertyFileName)) {
       properties = new Properties();
       properties.load(inputStream);
     }
     classToPropertyFilesMap.putIfAbsent(cls, new HashMap<>());
     HashMap<String, Properties> propertiesForSpecificClassMap = classToPropertyFilesMap.get(cls);
     if (propertiesForSpecificClassMap.containsKey(propertyFileName)) {
-      logger.warn("Adding a property file (" + propertyFileName + ") "
-          + "again using class (" + cls + ")");
+      logger.warn("Adding a property file ({}) again using class ({}})", propertyFileName, cls);
     }
     propertiesForSpecificClassMap.put(propertyFileName, properties);
   }
@@ -126,16 +125,13 @@ public class PropertyUtility {
     Objects.requireNonNull(propertyFileName);
 
     if (!classToPropertyFilesMap.containsKey(cls)) {
-      logger.warn("No property files loaded for the specified class (" + cls + ")");
+      logger.warn("No property files loaded for the specified class ({})", cls);
     } else {
       HashMap<String, Properties> propertiesForSpecificClassMap = classToPropertyFilesMap.get(cls);
       if (!propertiesForSpecificClassMap.containsKey(propertyFileName)) {
-        logger.warn(
-            "Specified property file ("
-                + propertyFileName
-                + ") hasn't been loaded for the specified class ("
-                + cls
-                + "). Hence it cannot be removed.");
+        String warningMessage = "Specified property file ({}) hasn't been loaded for the "
+            + "specified class ({}). Hence it cannot be removed.";
+        logger.warn(warningMessage, propertyFileName, cls);
       } else {
         propertiesForSpecificClassMap.remove(propertyFileName);
       }

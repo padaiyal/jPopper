@@ -43,6 +43,7 @@
 This project is to serve as a parent maven project to enforce the following good practices and
 provide commonly used functionality:
  - Checkstyle enforcement as per the Google java styling guide.
+ - PMD static code analysis to enforce good practices.
  - Java code coverage check enforcement.
  - Property Utility - To read properties from files.
  - Internationalization Utility - To use internationalized strings.
