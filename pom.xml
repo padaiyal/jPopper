@@ -6,7 +6,7 @@
 
     <groupId>org.java</groupId>
     <artifactId>popper</artifactId>
-    <version>2021.01.03</version>
+    <version>2021.01.05</version>
 
     <properties>
         <maven.compiler.target>14</maven.compiler.target>
@@ -141,6 +141,26 @@
                             <excludes>
                             </excludes>
                         </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.14.0</version>
+                <configuration>
+                    <linkXRef>false</linkXRef>
+                    <rulesets>
+                        <ruleset>/category/java/bestpractices.xml/SystemPrintln</ruleset>
+                        <ruleset>/category/java/bestpractices.xml/AvoidPrintStackTrace</ruleset>
+                    </rulesets>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                            <goal>cpd-check</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>
