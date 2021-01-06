@@ -1,3 +1,10 @@
+---
+name: Bug report
+about: For submitting bugs/defects.
+title: ' '
+labels: 'bug'
+assignees: ' '
+---
 
 - [ ] <b>Description</b> <br>
     A clear and concise description of what the bug is. <br>

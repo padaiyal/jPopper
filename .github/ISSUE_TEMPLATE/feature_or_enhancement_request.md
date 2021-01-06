@@ -1,3 +1,10 @@
+---
+name: Feature/Enhancement request report
+about: For requesting Features/Enhancements.
+title: ' '
+labels: ' '
+assignees: ' '
+---
 
 - [ ] <b>Description</b> <br>
     A clear and concise description of request/enhancement. <br>
