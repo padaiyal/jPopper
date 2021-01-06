@@ -1,6 +1,5 @@
 package tests.org.padaiyal.popper.wordspackage;
 
-import java.io.IOException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
@@ -33,7 +32,6 @@ public class WordCounterTest {
    *
    * @param str Invalid string input.
    * @param expectedWordCount Expected word count.
-   * @throws IOException When there is an issue loading the properties file.
    */
   @ParameterizedTest
   @CsvSource({
@@ -44,7 +42,7 @@ public class WordCounterTest {
       "'The little brown fox\rjumped over the lazy dog', 9",
       "'The little brown fox\njumped over the lazy dog', 9",
   })
-  public void testGetWordCount(String str, long expectedWordCount) throws IOException {
+  public void testGetWordCount(String str, long expectedWordCount) {
     Assertions.assertEquals(expectedWordCount, WordCounter.getWordCount(str));
   }
 }
