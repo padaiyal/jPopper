@@ -1,12 +1,10 @@
-package tests;
+package tests.org.padaiyal.popper.wordspackage;
 
 import java.io.IOException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvSource;
-import parameterconverters.ExceptionClassConverter;
-import wordspackage.WordCounter;
 
 /**
  * Tests the WordCounter class.
@@ -14,7 +12,7 @@ import wordspackage.WordCounter;
 public class WordCounterTest {
 
   /**
-   * Tests wordspackage.WordCounter::getWordCount() with invalid string inputs.
+   * Tests org.padaiyal.popper.wordspackage.WordCounter::getWordCount() with invalid string inputs.
    *
    * @param str Invalid string input.
    * @param expectedExceptionClass Exception expected to be thrown.
@@ -29,7 +27,7 @@ public class WordCounterTest {
   }
 
   /**
-   * Tests wordspackage.WordCounter::getWordCount() with invalid string inputs.
+   * Tests org.padaiyal.popper.wordspackage.WordCounter::getWordCount() with invalid string inputs.
    *
    * @param str Invalid string input.
    * @param expectedWordCount Expected word count.

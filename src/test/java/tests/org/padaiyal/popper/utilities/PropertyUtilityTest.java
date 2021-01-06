@@ -1,11 +1,11 @@
-package tests;
+package tests.org.padaiyal.popper.utilities;
 
 import java.io.IOException;
 import java.util.NoSuchElementException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import utilities.PropertyUtility;
+import org.padaiyal.popper.utilities.PropertyUtility;
 
 class PropertyUtilityTest {
 
