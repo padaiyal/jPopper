@@ -1,11 +1,11 @@
-package wordspackage;
+package org.padaiyal.popper.wordspackage;
 
 import java.io.IOException;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.validation.constraints.NotNull;
-import utilities.PropertyUtility;
+import org.padaiyal.popper.utilities.PropertyUtility;
 
 /**
  * Provides functionality to count words in a string.

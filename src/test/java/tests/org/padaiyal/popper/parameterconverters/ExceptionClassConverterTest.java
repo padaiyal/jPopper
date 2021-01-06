@@ -1,9 +1,9 @@
-package tests;
+package tests.org.padaiyal.popper.parameterconverters;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.converter.ArgumentConversionException;
-import parameterconverters.ExceptionClassConverter;
+import org.padaiyal.popper.parameterconverters.ExceptionClassConverter;
 
 /**
  * Tests the functionality of ExceptionClassConverter.
@@ -11,8 +11,8 @@ import parameterconverters.ExceptionClassConverter;
 public class ExceptionClassConverterTest {
 
   /**
-   * Tests parameterconverters.ExceptionClassConverter::convertExceptionNameToClass() with
-   * invalid inputs.
+   * Tests org.padaiyal.popper.parameterconverters.ExceptionClassConverter
+   * ::convertExceptionNameToClass() with invalid inputs.
    */
   @Test
   public void testConvertExceptionNameToClassWithInvalidInputs() {
@@ -31,8 +31,8 @@ public class ExceptionClassConverterTest {
   }
 
   /**
-   * Tests parameterconverters.ExceptionClassConverter::convertExceptionNameToClass() with
-   * valid inputs.
+   * Tests org.padaiyal.popper.parameterconverters.ExceptionClassConverter
+   * ::convertExceptionNameToClass() withvalid inputs.
    */
   @Test
   public void testConvertExceptionNameToClassWithValidInputs() {

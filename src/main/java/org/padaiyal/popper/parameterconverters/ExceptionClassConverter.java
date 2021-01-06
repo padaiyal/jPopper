@@ -1,4 +1,4 @@
-package parameterconverters;
+package org.padaiyal.popper.parameterconverters;
 
 import java.util.Objects;
 import org.junit.jupiter.api.extension.ParameterContext;
