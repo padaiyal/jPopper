@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.padaiyal.popper.parameterconverters.ExceptionClassConverter;
+import org.padaiyal.popper.wordspackage.WordCounter;
 
 /**
  * Tests the WordCounter class.

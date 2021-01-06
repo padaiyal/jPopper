@@ -45,9 +45,6 @@ provide commonly used functionality:
  - Checkstyle enforcement as per the Google java styling guide.
  - PMD static code analysis to enforce good practices.
  - Java code coverage check enforcement.
- - Property Utility - To read properties from files.
- - Internationalization Utility - To use internationalized strings.
-
 
 
 <!-- ROADMAP -->

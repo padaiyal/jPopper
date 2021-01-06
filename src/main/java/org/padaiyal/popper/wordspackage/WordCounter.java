@@ -5,7 +5,6 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.validation.constraints.NotNull;
-import org.padaiyal.popper.utilities.PropertyUtility;
 
 /**
  * Provides functionality to count words in a string.
@@ -27,12 +26,10 @@ public final class WordCounter {
   public static long getWordCount(@NotNull final String str) throws IOException {
     Objects.requireNonNull(str);
 
-    PropertyUtility.addPropertyFile(WordCounter.class, "WordCounter.properties");
-
     long wordCount = 0;
     if (str.length() != 0) {
       wordCount = 1;
-      String wordSeparatorRegex = PropertyUtility.getProperty("string.regex.wordSeparator");
+      String wordSeparatorRegex = "\\s+";
       Matcher matcher = Pattern.compile(wordSeparatorRegex).matcher(str.trim());
       while (matcher.find()) {
         wordCount++;
