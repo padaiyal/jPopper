@@ -9,9 +9,9 @@
 <div align="center">
   <h1 align="center">jPopper</h1>
   <p align="center">
-    A template for Java maven projects.
+    A parent for Java maven projects with best practices and commonly used checks enforced.
     <br />
-    <a href="https://github.com/padaiyal/jPopper/issues/new">Report Bug/Request Feature</a>
+    <a href="https://github.com/padaiyal/jPopper/issues/new/choose">Report Bug/Request Feature</a>
   </p>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -22,16 +22,15 @@
 ![Maven build - Ubuntu latest](https://github.com/padaiyal/jPopper/workflows/Maven%20build%20-%20Ubuntu%20latest/badge.svg?branch=main)
 ![Maven build - Windows latest](https://github.com/padaiyal/jPopper/workflows/Maven%20build%20-%20Windows%20latest/badge.svg?branch=main)
 ![Maven build - MacOS latest](https://github.com/padaiyal/jPopper/workflows/Maven%20build%20-%20MacOS%20latest/badge.svg?branch=main)
-
+![Publish to GitHub packages](https://github.com/padaiyal/jPopper/workflows/Publish%20to%20GitHub%20packages/badge.svg)
 </div>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -46,6 +45,22 @@ provide commonly used functionality:
  - PMD static code analysis to enforce good practices.
  - Java code coverage check enforcement.
 
+<!-- USAGE -->
+## Usage
+This project is only meant to be used as a parent maven project. <br>
+To do so:
+ 1. Add this repository as a git submodule to the child project repository.
+ 2. In the pom.xml of the child repository, add the following lines:
+    ```
+    <parent>
+       <groupId>org.padaiyal</groupId>
+       <artifactId>popper</artifactId>
+       <version>2021.01.06</version>
+       <relativePath>jPopper</relativePath>
+    </parent>
+    ```
+    Replace the contents of the relativePath tag to the actual relative path of the submodule with 
+    respect to the child project's pom.xml. 
 
 <!-- ROADMAP -->
 ## Roadmap
