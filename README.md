@@ -61,6 +61,17 @@ To do so:
     ```
     Replace the contents of the relativePath tag to the actual relative path of the submodule with 
     respect to the child project's pom.xml. 
+ 3. To use the existing GitHub action [Publish to GitHub packages](https://github.com/padaiyal/jPopper/blob/main/.github/workflows/package_publish.yml), the distributionManagement section also needs to be configured in the child project's pom.xml.
+    ```
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Child project MVN package deployment</name>
+            <url>https://maven.pkg.github.com/<organization_or_user>/<repository_name></url>
+        </repository>
+    </distributionManagement>
+    ```
+    NOTE: Ensure that the child project's artifact ID follows the maven [naming conventions](https://maven.apache.org/guides/mini/guide-naming-conventions.html). Else GitHub packages would reject the upload with a `HTTP 422: Unprocessable Entity` error.
 
 <!-- ROADMAP -->
 ## Roadmap
