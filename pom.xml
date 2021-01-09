@@ -6,7 +6,7 @@
 
     <groupId>org.padaiyal</groupId>
     <artifactId>popper</artifactId>
-    <version>2021.01.06</version>
+    <version>2021.01.09</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -151,9 +151,9 @@
                 <version>3.14.0</version>
                 <configuration>
                     <linkXRef>false</linkXRef>
+                    <includeTests>true</includeTests>
                     <rulesets>
-                        <ruleset>/category/java/bestpractices.xml/SystemPrintln</ruleset>
-                        <ruleset>/category/java/bestpractices.xml/AvoidPrintStackTrace</ruleset>
+                        <ruleset>${project.basedir}/pmd_rules.xml</ruleset>
                     </rulesets>
                 </configuration>
                 <executions>
