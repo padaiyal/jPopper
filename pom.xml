@@ -153,7 +153,7 @@
                     <linkXRef>false</linkXRef>
                     <includeTests>true</includeTests>
                     <rulesets>
-                        <ruleset>${project.basedir}/pmd_rules.xml</ruleset>
+                        <ruleset>https://raw.githubusercontent.com/padaiyal/jPopper/main/pmd_rules.xml</ruleset>
                     </rulesets>
                 </configuration>
                 <executions>
