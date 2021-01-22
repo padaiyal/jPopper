@@ -6,33 +6,43 @@
 
     <groupId>org.padaiyal</groupId>
     <artifactId>popper</artifactId>
-    <version>2021.01.09</version>
+    <version>2021.01.22</version>
     <packaging>pom</packaging>
+
+    <url>https://github.com/padaiyal/jPopper.git</url>
 
     <properties>
         <maven.compiler.target>14</maven.compiler.target>
         <maven.compiler.source>14</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <plugin.surefire.version>3.0.0-M5</plugin.surefire.version>
+        <plugin.site.version>3.7.1</plugin.site.version>
+        <plugin.projectInfoReports.version>3.0.0</plugin.projectInfoReports.version>
+        <plugin.checkstyle.version>3.1.1</plugin.checkstyle.version>
+        <plugin.jacoco.version>0.8.6</plugin.jacoco.version>
+        <plugin.pmd.version>3.14.0</plugin.pmd.version>
+        <dependency.checkstyle.version>8.38</dependency.checkstyle.version>
+        <dependency.validationApi.version>2.0.1.Final</dependency.validationApi.version>
+        <dependency.junit.version>5.7.0</dependency.junit.version>
+        <dependency.log4j.version>2.13.2</dependency.log4j.version>
     </properties>
-
-    <url>https://github.com/padaiyal/jPopper.git</url>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>${plugin.surefire.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <version>3.7.1</version>
+                <version>${plugin.site.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>${plugin.projectInfoReports.version}</version>
             </plugin>
             <!-- Following the instructions here to setup code autoformatting will be useful
              in addressing checkstyle failures - https://github.com/google/google-java-format
@@ -41,12 +51,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.1.1</version>
+                <version>${plugin.checkstyle.version}</version>
                 <dependencies>
                     <dependency>
                         <groupId>com.puppycrawl.tools</groupId>
                         <artifactId>checkstyle</artifactId>
-                        <version>8.38</version>
+                        <version>${dependency.checkstyle.version}</version>
                     </dependency>
                 </dependencies>
                 <configuration>
@@ -72,7 +82,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.6</version>
+                <version>${plugin.jacoco.version}</version>
                 <configuration>
                     <dataFile>${basedir}/target/jacoco.exec</dataFile>
                 </configuration>
@@ -148,7 +158,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.14.0</version>
+                <version>${plugin.pmd.version}</version>
                 <configuration>
                     <linkXRef>false</linkXRef>
                     <includeTests>true</includeTests>
@@ -180,29 +190,29 @@
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
-            <version>2.0.1.Final</version>
+            <version>${dependency.validationApi.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.7.0</version>
+            <version>${dependency.junit.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
-            <version>5.5.1</version>
+            <version>${dependency.junit.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.13.2</version>
+            <version>${dependency.log4j.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>2.8.2</version>
+            <version>${dependency.log4j.version}</version>
         </dependency>
     </dependencies>
 
