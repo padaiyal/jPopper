@@ -7,11 +7,11 @@ assignees: ' '
 ---
 
 - [ ] <b>Description</b> <br>
-    A clear and concise description of request/enhancement. <br>
+    A clear and concise description of request/enhancement. 
 - [ ] <b>Use cases</b> <br>
     1. Save the world.
     2. Stop the imposter.
-    3. .... <br>
+    3. .... 
 - [ ] <b>Proposed design</b> <br>
     A clear and concise description of the design planned for this feature/enhancement.
     Attach design diagrams if applicable.
