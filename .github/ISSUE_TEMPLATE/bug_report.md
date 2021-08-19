@@ -7,7 +7,7 @@ assignees: ' '
 ---
 
 - [ ] <b>Description</b> <br>
-    A clear and concise description of what the bug is. <br>
+    A clear and concise description of what the bug is. 
 - [ ] <b>Affected platforms</b> <br>
 
     | OS      	| Version 	|
