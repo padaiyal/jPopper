@@ -6,7 +6,7 @@
 
     <groupId>org.padaiyal</groupId>
     <artifactId>popper</artifactId>
-    <version>2021.01.22</version>
+    <version>2021.12.15</version>
     <packaging>pom</packaging>
 
     <url>https://github.com/padaiyal/jPopper.git</url>
@@ -165,6 +165,7 @@
                     <rulesets>
                         <ruleset>https://raw.githubusercontent.com/padaiyal/jPopper/main/pmd_rules.xml</ruleset>
                     </rulesets>
+                    <printFailingErrors>true</printFailingErrors>
                 </configuration>
                 <executions>
                     <execution>
