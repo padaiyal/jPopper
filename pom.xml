@@ -103,8 +103,6 @@
                             <goal>sign</goal>
                         </goals>
                         <configuration>
-                            <keyname>padaiyal</keyname>
-                            <passphraseServerId>BC9157EBFB6D8EBA2BF236F5B4D6FEFEEF240C3F</passphraseServerId>
                             <!-- Prevent gpg from using pinentry programs. Fixes: gpg: signing
                                 failed: Inappropriate ioctl for device -->
                             <gpgArguments>
