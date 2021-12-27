@@ -22,7 +22,8 @@
 ![Maven build - Ubuntu latest](https://github.com/padaiyal/jPopper/workflows/Maven%20build%20-%20Ubuntu%20latest/badge.svg?branch=main)
 ![Maven build - Windows latest](https://github.com/padaiyal/jPopper/workflows/Maven%20build%20-%20Windows%20latest/badge.svg?branch=main)
 ![Maven build - MacOS latest](https://github.com/padaiyal/jPopper/workflows/Maven%20build%20-%20MacOS%20latest/badge.svg?branch=main)
-![Publish to GitHub packages](https://github.com/padaiyal/jPopper/workflows/Publish%20to%20GitHub%20packages/badge.svg)
+[![Publish package to the Maven Central Repository](https://github.com/padaiyal/jPopper/actions/workflows/maven_central_package_publish.yml/badge.svg)](https://github.com/padaiyal/jPopper/actions/workflows/maven_central_package_publish.yml) <br>
+[![Latest version in Maven Central](https://img.shields.io/maven-central/v/io.github.padaiyal/popper)](https://search.maven.org/artifact/io.github.padaiyal/popper)
 </div>
 
 <!-- TABLE OF CONTENTS -->
