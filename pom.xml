@@ -60,7 +60,7 @@
         <dependency.checkstyle.version>8.38</dependency.checkstyle.version>
         <dependency.validationApi.version>2.0.1.Final</dependency.validationApi.version>
         <dependency.junit.version>5.8.2</dependency.junit.version>
-        <dependency.log4j.version>2.17.1</dependency.log4j.version>
+        <dependency.log4j.version>2.18.0</dependency.log4j.version>
     </properties>
 
     <build>
