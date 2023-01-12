@@ -6,7 +6,7 @@
 
     <groupId>io.github.padaiyal</groupId>
     <artifactId>popper</artifactId>
-    <version>2022.02.07</version>
+    <version>2023.01.12</version>
     <packaging>pom</packaging>
 
     <name>Popper</name>
@@ -44,23 +44,23 @@
     </scm>
 
     <properties>
-        <maven.compiler.target>14</maven.compiler.target>
-        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <plugin.mavenSourcePlugin.version>3.2.1</plugin.mavenSourcePlugin.version>
-        <plugin.mavenJavadocPlugin.version>3.2.0</plugin.mavenJavadocPlugin.version>
+        <plugin.mavenJavadocPlugin.version>3.4.1</plugin.mavenJavadocPlugin.version>
         <plugin.mavenGpgPlugin.version>1.6</plugin.mavenGpgPlugin.version>
         <plugin.nexusStagingMavenPlugin.version>1.6.8</plugin.nexusStagingMavenPlugin.version>
-        <plugin.surefire.version>3.0.0-M5</plugin.surefire.version>
+        <plugin.surefire.version>3.0.0-M7</plugin.surefire.version>
         <plugin.site.version>3.7.1</plugin.site.version>
         <plugin.projectInfoReports.version>3.0.0</plugin.projectInfoReports.version>
         <plugin.checkstyle.version>3.1.1</plugin.checkstyle.version>
-        <plugin.jacoco.version>0.8.6</plugin.jacoco.version>
+        <plugin.jacoco.version>0.8.8</plugin.jacoco.version>
         <plugin.pmd.version>3.14.0</plugin.pmd.version>
         <dependency.checkstyle.version>8.38</dependency.checkstyle.version>
         <dependency.validationApi.version>2.0.1.Final</dependency.validationApi.version>
-        <dependency.junit.version>5.8.2</dependency.junit.version>
-        <dependency.log4j.version>2.17.1</dependency.log4j.version>
+        <dependency.junit.version>5.9.2</dependency.junit.version>
+        <dependency.log4j.version>2.19.0</dependency.log4j.version>
     </properties>
 
     <build>
@@ -179,7 +179,7 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${plugin.jacoco.version}</version>
                 <configuration>
-                    <dataFile>${basedir}/target/jacoco.exec</dataFile>
+                    <dataFile>${basedir}/target/jacoco.xml</dataFile>
                 </configuration>
                 <executions>
                     <execution>
