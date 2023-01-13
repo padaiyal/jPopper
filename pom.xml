@@ -6,7 +6,7 @@
 
     <groupId>io.github.padaiyal</groupId>
     <artifactId>popper</artifactId>
-    <version>2023.01.12</version>
+    <version>2023.01.13</version>
     <packaging>pom</packaging>
 
     <name>Popper</name>
@@ -56,7 +56,7 @@
         <plugin.projectInfoReports.version>3.0.0</plugin.projectInfoReports.version>
         <plugin.checkstyle.version>3.1.1</plugin.checkstyle.version>
         <plugin.jacoco.version>0.8.8</plugin.jacoco.version>
-        <plugin.pmd.version>3.14.0</plugin.pmd.version>
+        <plugin.pmd.version>3.20.0</plugin.pmd.version>
         <dependency.checkstyle.version>8.38</dependency.checkstyle.version>
         <dependency.validationApi.version>2.0.1.Final</dependency.validationApi.version>
         <dependency.junit.version>5.9.2</dependency.junit.version>
