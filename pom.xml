@@ -6,7 +6,7 @@
 
     <groupId>io.github.padaiyal</groupId>
     <artifactId>popper</artifactId>
-    <version>2023.01.13</version>
+    <version>2023.01.18</version>
     <packaging>pom</packaging>
 
     <name>Popper</name>
@@ -50,7 +50,7 @@
         <plugin.mavenSourcePlugin.version>3.2.1</plugin.mavenSourcePlugin.version>
         <plugin.mavenJavadocPlugin.version>3.4.1</plugin.mavenJavadocPlugin.version>
         <plugin.mavenGpgPlugin.version>1.6</plugin.mavenGpgPlugin.version>
-        <plugin.nexusStagingMavenPlugin.version>1.6.8</plugin.nexusStagingMavenPlugin.version>
+        <plugin.nexusStagingMavenPlugin.version>1.6.13</plugin.nexusStagingMavenPlugin.version>
         <plugin.surefire.version>3.0.0-M7</plugin.surefire.version>
         <plugin.site.version>3.7.1</plugin.site.version>
         <plugin.projectInfoReports.version>3.0.0</plugin.projectInfoReports.version>
