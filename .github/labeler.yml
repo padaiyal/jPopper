@@ -1,0 +1,11 @@
+continuous integration:
+- any: ['pmd_rules.xml', '.github/workflows/**/*', '!.github/workflows/maven_central_package_publish.yml']
+
+continuous deployment:
+- .github/workflows/maven_central_package_publish.yml
+
+documentation:
+- any: ['README.md', '**/*.md', 'LICENSE']
+
+unit test:
+- src/test/**/*
