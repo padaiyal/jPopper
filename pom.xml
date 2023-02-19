@@ -6,7 +6,7 @@
 
     <groupId>io.github.padaiyal</groupId>
     <artifactId>popper</artifactId>
-    <version>2023.01.24</version>
+    <version>2023.02.19</version>
     <packaging>pom</packaging>
 
     <name>Popper</name>
@@ -179,7 +179,7 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${plugin.jacoco.version}</version>
                 <configuration>
-                    <dataFile>${basedir}/target/jacoco.xml</dataFile>
+                    <dataFile>${basedir}/target/jacoco.exec</dataFile>
                 </configuration>
                 <executions>
                     <execution>
